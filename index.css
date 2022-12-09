@@ -1,0 +1,201 @@
+@import url("./reset.css");
+
+/* * {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+} */
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeIn 2s ease 1s forwards;
+}
+.contentsWrap {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 1000px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sun {
+  position: absolute;
+  width: 40%;
+  top: 5%;
+  right: 5%;
+  opacity: 0;
+  animation: toSunUp 1.2s ease 2.5s forwards;
+}
+.word {
+  position: absolute;
+  width: 65%;
+  top: 11%;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-45%);
+  animation: fadeIn 1s ease 3s forwards;
+}
+.treesleft2 {
+  position: absolute;
+  width: 15%;
+  left: 35%;
+  top: 26.5%;
+  animation: toUp 3s;
+}
+.leftSnow2 {
+  position: absolute;
+  width: 75%;
+  left: 0;
+  top: 25%;
+  animation: toRight 1.5s forwards;
+}
+.treeRight2 {
+  position: absolute;
+  width: 30%;
+  right: 20%;
+  top: 32%;
+  opacity: 0;
+  animation: toUp 1s ease 1s forwards;
+}
+.righSnow2 {
+  position: absolute;
+  width: 80%;
+  top: 37%;
+  right: 0;
+  animation: toLeft 2s forwards;
+}
+.treeLeft1 {
+  position: absolute;
+  width: 42%;
+  top: 34%;
+  left: 0;
+  animation: toRight 2s forwards;
+}
+.rabbit {
+  position: absolute;
+  bottom: 28%;
+  left: 50%;
+  opacity: 0;
+  animation: leftToCenter 1.2s ease 2.5s forwards;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.treeRight1 {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  width: 40%;
+  animation: toLeft 1s forwards;
+}
+.leftSnow {
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  /* animation: toRight 0.1s; */
+}
+.logo {
+  position: absolute;
+  width: 20%;
+  bottom: 3%;
+  left: 3%;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    ransform: translateY(-100%);
+  }
+}
+@keyframes toSunUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    ransform: translateY(-100%);
+  }
+}
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+@keyframes leftToCenter {
+  0% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+/* @keyframes rabbitJump {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(-50%);
+  }
+} */
